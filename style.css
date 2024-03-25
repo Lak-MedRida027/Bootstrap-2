@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+color{
+    color: red;
+}
+/*  */
+#navbarSupportedContent ul li{
+    transition: all .5s ease;
+}
+
+#navbarSupportedContent ul li:hover{
+    background-color: rgb(252, 122, 122);
+    transform: scale(1.2);
+    border-radius: 3px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand img{
+   transition: all .5s ease;
+}
+
+.navbar-brand img:hover{
+    transform: translate(0px,-15px);
+}
+
+#sec-1{
+    background-color: rgb(240, 239, 242);
+    max-height: 75%;
+}
+
+#sec-1 img{
+    max-width: 64%;
+}
+
+#sec-1 .hvr-bounce-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: rgb(255, 31, 32);
+    border: none;
+    color: white;
+    padding: 8px 18px ;
+    margin-top: 10px;
+}
+#sec-1 .hvr-bounce-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(74, 74, 75);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#sec-1 .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+    color: white;
+}
+
+#sec-1 .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* end of sec-1 */
+
+#sec-2 .container .row .col-lg-4 div{
+    overflow: hidden;
+}
+
+#sec-2 .container .row .col-lg-4 div img{
+    border-radius: 3px;
+    transition: all .6s ease-in-out;
+}
+
+#sec-2 .container .row .col-lg-4 div:hover img{
+    transform: scale(1.2);
+}
+
+/* end of sec-2 */
+
+#sec-3 .container-fluid .row .col-xl-6{
+    overflow: hidden;
+}
+
+#sec-3 .container-fluid .row .col-xl-6 img{
+    transition: all .7s ease;
+}
+
+#sec-3 .container-fluid .row .col-xl-3{
+    overflow: hidden;
+}
+
+#sec-3 .container-fluid .row .col-xl-3 img{
+    width: 400px;
+    height: 510px;
+    transition: all .7s ease;
+}
+
+#sec-3 .container-fluid .row .col-xl-3 div{
+    width: 250px;
+    height: 220px;
+    overflow: hidden;
+}
+
+#sec-3 .container-fluid .row .col-xl-3 div img{
+    width: 350px;
+    height: 270px;
+    transition: all .7s ease;
+}
+
+
+#sec-3 .container-fluid .row .col-xl-6:hover img{
+    filter: grayscale(60%);
+    transform: scale(0.95);
+}
+
+#sec-3 .container-fluid .row .col-xl-3 img:hover{
+    filter: grayscale(60%);
+    transform: scale(0.95);
+}
+
+/* end of sec-3 */
+
+#sec-4 .container .row .col-lg-4 div{
+    position: relative;
+    overflow: hidden;
+}
+
+#sec-4 .container .row .col-lg-4 div i{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 0;
+    transition: .6s;
+}
+
+#sec-4 .container .row .col-lg-4 div button{
+   background-color: rgba(255, 0, 0, 0.705);
+   color: white;
+   position: absolute;
+   bottom: 0;
+   left: 3px;
+   z-index: 10;
+   transform: translateY(95%);
+   transition: .6s;
+   display: block;
+}
+
+#sec-4 .container .row div:hover button{
+    transform: translateY(0);
+}
+
+#sec-4 .container .row div:hover i{
+    opacity: 1;
+}
+
+/* end of sec-4 */
+
+#sec-6 .container .row{
+    background-color: rgb(235, 0, 0);
+    color: white;
+}
+
+#sec-6 .container .row p{
+    color: white;
+}
+
+/* end of sec-6 */
+
+footer .container .row ul li a{
+   color: black;
+}
